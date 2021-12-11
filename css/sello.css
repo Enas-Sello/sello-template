@@ -12,7 +12,20 @@
         --top-padding:100px;
         --bottom-padding:100px;
 
-  }
+  }  
+.go-top{  
+      color: var(--main-color);
+      animation: bouncing 1.5s infinite;
+      transition: var(--main-transition);
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+      opacity: 0;
+       }
+
+       .go-top.show  {
+        opacity: 1;}
   html {
     scroll-behavior: smooth;
   }
@@ -1300,3 +1313,5 @@ height: 200%;
   
 }
 /*end animation*/
+
+ /* extra*/
