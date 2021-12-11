@@ -1,6 +1,5 @@
 let span = document.querySelector(".go-top");
 window.onscroll = function(){
-  //  console.log(this.scrollY);
  if (this.scrollY >= 1100){
      span.classList.add("show")
   }
