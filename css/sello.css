@@ -106,14 +106,15 @@ border: whitesmoke 2px solid;
 
 }
 .main-title:hover::before{
-animation: fill-left-move var(--main-transition) linear forwards;/*علشان ميتكررش ويبدا و بنتهي في نفس الوقت*/
+animation: fill-left-move var(--main-transition) linear forwards;
 z-index: -1;
 }
 .main-title:hover::after{
-  animation: fill-righe-move var(--main-transition) linear forwards;/*علشان ميتكررش ويبدا و بنتهي في نفس الوقت*/
+  animation: fill-righe-move var(--main-transition) linear forwards;
   z-index: -1;
   }
   /*end main titel*/
+
   /*end global rols*/
 
   /*start heading*/
@@ -133,8 +134,8 @@ z-index: -1;
     position: relative;  
 }
 .logo{display: flex;
-  align-items: center;/* instad of margin so it became in center*/
-  justify-content: center;/* instad of margin so it became in center*/ 
+  align-items: center;
+  justify-content: center;
   height: 72px;}
 
 .logo h1{
@@ -145,7 +146,7 @@ z-index: -1;
 }
 @media (max-width: 767px) {
   .logo{
-   width: 100%;/*so it be came in midel*/
+   width: 100%;
    height: 70px;
   }
 }
@@ -166,7 +167,7 @@ margin: auto;  }
   align-items: center;
   font-size: 18px;
   color: black;
-  height: 72px;/*so i dont do paddng top or bottom (so it dosnot chang if i chang the font)*/
+  height: 72px;
   padding: 0 30px;
   position: relative;
   overflow: hidden;
@@ -259,10 +260,10 @@ font-weight: bold;
   height: 100%;
   background-color: #ececec;
   z-index: -1;
-  left: 0;/*start from tooo left */
-  top: -30px;/*start from top*/
-  transform: skewY(-7deg);/*so it be come with an angel*/
-  transform-origin: top left;  /*deciad witch way to start from*/  
+  left: 0;
+  top: -30px;
+  transform: skewY(-7deg);
+  transform-origin: top left; 
 }
 .landing .container {
   display: flex;
@@ -273,7 +274,7 @@ font-weight: bold;
 
 }
 .landing .text{
-flex: 1;/*so it grow normaly*/
+flex: 1;
 }
 @media(max-width:991px){
   .landing .text{
@@ -310,7 +311,7 @@ font-size: 25px;  }
   position: relative;
   width: 615px;
 
-  animation: up-down 5s linear infinite;/* liner يروح ويجي في نفس الوقت*/
+  animation: up-down 5s linear infinite;
 }
 @media(max-width:991px){
   .landing .image{
@@ -321,16 +322,14 @@ display: none;
   color: var(--main-color);
   position: absolute;
   bottom: 38px;
-  left: 50%;/*so it becam in medil*/
-  transform: translateY(50%);/*so it becam in medil*/
+  left: 50%;
+  transform: translateY(50%);
 transition: var(--main-transition);
-animation: bouncing 1.5s infinite;/*infint علشان يتكرر ميقفش*/
+animation: bouncing 1.5s infinite;
 }
 .go-down i{
   transform: skewY(6deg);}
 /*end landing*/
-
-
 
   /*start articles*/
   .articles{
@@ -348,10 +347,10 @@ animation: bouncing 1.5s infinite;/*infint علشان يتكرر ميقفش*/
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   border-radius: 10px;
   overflow: hidden;
-  transition: transform var(--main-transition), box-shadow var(--main-transition);/*دا الوقت بتاعها*/
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
-.articles .box:hover{/*دا الي هيحصل في الوقت الي حددنهاه في main*/
-transform: translateY(-10px);/*افضل طريقه لتحريك العنصر*/
+.articles .box:hover{
+transform: translateY(-10px);
 box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 .articles .containt{
@@ -415,7 +414,7 @@ animation: flash .5s ;
   border: white 16px solid;
 }
 .gallery img:hover{
-  transform: rotate(5deg) scale(1.1);/* وتزيد حته كداعلشاان تلف */
+  transform: rotate(5deg) scale(1.1);
 
 }
 /*end gallery*/
@@ -442,7 +441,7 @@ padding-top: var(--top-padding);}
 overflow: hidden;
 }
 .features img{
-  width: 100%;/*علشان لو صوره صغيره اوي او كبيره اوي يحدد حجمها*/
+  width: 100%;
   max-width: 100%;
 border: none;
 }
@@ -604,6 +603,7 @@ font-weight: normal;
 .testimonial i{
 color: #ffc107;}
  /*end testimonials*/
+
  /*start team members*/
 .team-members{
   padding-top: var(--top-padding);
@@ -767,7 +767,7 @@ color: var(--main-color);
   position: relative;
 }
 .skills .progres span{
-  width: 80%;
+  transition: var(--main-transition);
   background-color: var(--main-color);
   position: absolute;
   top: 0;
@@ -829,6 +829,7 @@ color: var(--main-color);
   font-size: 16px;
 }
  /*end work steps*/
+
 /*start events*/
 .events{
   padding-top:var(--top-padding) ;
@@ -879,11 +880,8 @@ width: 370px;}
 
 .events input[type=submit]{
   width: 300px;
-
 }
-
 }
-
 .events input[type="email"]{ 
   padding: 20px;
   border-radius: 50px;
@@ -1246,9 +1244,6 @@ border: 3px solid white;}
 }
 /*end footer*/
 
-
-
-
 /*start animation*/
 @keyframes up-down {
   0%, 100%{
@@ -1314,4 +1309,4 @@ height: 200%;
 }
 /*end animation*/
 
- /* extra*/
+
