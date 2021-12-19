@@ -831,37 +831,51 @@ color: var(--main-color);
  /*end work steps*/
 
 /*start events*/
-.events{
-  padding-top:var(--top-padding) ;
+.events {
+  padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
 }
-.events .container{
+
+.events .container {
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: center;
+  flex-wrap: wrap;
 }
-.events .left-dots{position: absolute; 
-  left: -190px;
-  bottom: -70px;
+.events img{max-width: 450px;}
 
+.events .left-dots {
+  position: absolute;
+  left: -25px;
+  bottom: -120px;
 }
-.events .right-dots{
-  position:absolute;
-  right: -190px;
+
+.events .right-dots {
+  position: absolute;
+  right: 0px;
   top: -70px;
 }
-@media (max-width: 992px){
-  .events img{
+
+@media (max-width: 992px) {
+  .events img {
     display: none;
   }
 }
-.events .info{text-align: center;}
-.events .info h2{color: var(--main-color);}
-.events .info p{font-size: 20px;
-max-width: 500px;}
 
-.events form{
+.events .info {
+  text-align: center;
+}
+
+.events .info h2 {
+  color: var(--main-color);
+}
+
+.events .info p {
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.events form {
   width: 600px;
   margin: 20px auto;
   padding: 30px 40px;
@@ -870,35 +884,36 @@ max-width: 500px;}
   display: flex;
   gap: 20px;
 }
-@media (max-width: 768px){.events form{
-  flex-direction: column;
-  align-items: center;
-width: 370px;}
-.events input[type="email"] {
-  width: 300px;
+
+@media (max-width: 767px) {
+  .events form {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 
-.events input[type=submit]{
-  width: 300px;
-}
-}
-.events input[type="email"]{ 
+.events input[type="email"] {
   padding: 20px;
   border-radius: 50px;
   border: none;
   flex: 1;
   caret-color: var(--main-color);
 }
-.events input[type="email"]:focus{
+
+.events input[type="email"]:focus {
   outline: none;
 }
-.events input[type="email"]::placeholder{
+
+.events input[type="email"]::placeholder {
   transition: opacity var(--main-transition);
 }
-.events input[type="email"]:focus::placeholder{
+
+.events input[type="email"]:focus::placeholder {
   opacity: 0;
 }
-.events input[type=submit]{
+
+.events input[type=submit] {
   border-radius: 50px;
   border: none;
   background-color: var(--main-color);
@@ -918,7 +933,7 @@ width: 370px;}
 }
 .plans .container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 gap: 40px;
 }
 .plans .box{
